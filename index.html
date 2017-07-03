@@ -1,68 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title> Trevina's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-<style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Zoom In/Out</title>
+<!-- must have -->
+<link href="css/slide/style.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
 
-  
+<style type="text/css">
+body {
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+overflow-x:hidden;
+}
 </style>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="js/slider.js" type="text/javascript"></script>
+<script src="js/menu.js" type="text/javascript"></script>
+<!-- must have -->
+
+
+
+
+	<script>
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.indexOf("msie") != -1 || ua.indexOf("opera") != -1) {
+			jQuery('body').css('overflow','hidden');
+			jQuery('html').css('overflow','hidden');
+		}				
+		
+		jQuery(function() {
+			jQuery('#bannerscollection_zoominout_opportune').bannerscollection_zoominout({
+				skin: 'opportune',
+				responsive:true,
+				width: 1920,
+				height: 1200,
+				width100Proc:true,
+				height100Proc:true,
+				fadeSlides:1,
+				showNavArrows:true,
+				showBottomNav:true,
+				autoHideBottomNav:true,
+				thumbsWrapperMarginTop: -55,
+				pauseOnMouseOver:false
+			});		
+			
+		});
+
+		
+	</script>
+ 
 </head>
 
+<body bgcolor="#cccccc">
 
-<body class="home">
 
- <header>
-  <a class="logo" href="index.html"><img src="image/Logo.png" alt="logo" width="55px"></a>
+<header>
+  <a class="logo" href=""><img src="img/Logo.png" alt="logo" width="50%"></a>
   
-   <nav>
-     <ul>
-     <li><a href="Aboutme.html">About me</a></li>
-     <li><a href="projects.html">Projects</a></li>
-     <li><a href="contactme.html">Contact me</a></li>
-      </ul>
-   </nav>
+  <a href="javascript:void(0)" class="menu-btn" title="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="0 0 1.7 1" style="enable-background:new 0 0 1.7 1;" xml:space="preserve">
+				<rect x="0.2" id="one" width="1.5" height="0.2"></rect>
+				<rect x="0" y="0.4" id="two" width="1" height="0.2"></rect>
+				<rect x="0.8" y="0.8" id="three" width="0.9" height="0.2"></rect>
+			</svg>
+    </a>
+    <div class="menu-white-bar"></div>
+    <div class="menu-container normal">
+      <div class="relative">
+        <div class="menu">
+          <div class="wrapper" style="width: 800px">
+            <div class="column">
+              <span class="libelle">
+                      <span>About Us</span>
+              </span>
+              
+              <div class="clear"></div>
+            </div>
+
+ <div class="column">
+              <span class="libelle">
+                <span>Products</span>
+              </span>
+             
+              <div class="clear"></div>
+            </div>           
+  <div class="column">
+              <span class="libelle">
+                  <span><a href="projects.asp">Projects</a></span>
+              </span>
+             
+              <div class="clear"></div>
+            </div>           
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="mask"></div>
+      </div>
+    </div>
    
- </header> 
- 
- <section class="homepage">
- 
-  <div class="slider">
-   <h1 class="slider-text ">Graphic and Web Designer</h1>
-   <div class="slider-line"></div>
-   <h2 class="slider-text2">Looking for an internship</h2>
-    <a class="button" href="#more">Discover more</a>
-  </div>
-  
+ </header>
+            <div id="bannerscollection_zoominout_opportune">
+            	<div class="myloader"></div>
+                <!-- CONTENT -->
+                <ul class="bannerscollection_zoominout_list">
+               		<li data-initialZoom="0.77" data-finalZoom="1" data-horizontalPosition="center" data-verticalPosition="center"data-bottom-thumb="images/opportuneFullScreen/thumbs/01_opportune.png" data-text-id="#bannerscollection_zoominout_photoText1" data-autoPlay="10"><img src="img/bgimage2.jpg" alt="" width="2500" height="1570" /></li>
+                    
+                    <li data-initialZoom="0.77" data-finalZoom="1" data-horizontalPosition="center" data-verticalPosition="center" data-bottom-thumb="images/opportuneFullScreen/thumbs/02_opportune.jpg" data-text-id="#bannerscollection_zoominout_photoText2" data-link="http://codecanyon.net/user/LambertGroup" data-target="_blank"><img src="img/14567375_1397793680250782_9187350794132222164_o.jpg" alt="" width="2500" height="1570" /></li>
+                    
+                   
+                </ul>    
+                
+                
+                
 
-   
-   <!--
-   <div class="slider2">
-   <h1 class="slide-text">Graphic and Web designer</h1>
-   <h3 class="slide-text2">Looking for an internship</h3>
-   </div>
-   -->
-    
-    
- </section>
- 
- 
-<section id="more">
-  <div class="group">
-  <h2 class="title-more">More...</h2>
-  <h4 class="opportunities">I am looking for new opportunities!</h4>
+               <!-- TEXTS -->
+              <div id="bannerscollection_zoominout_photoText1" class="bannerscollection_zoominout_texts">
+                    <div class="bannerscollection_zoominout_text_line textElement11_opportuneFullScreen" 
+                    data-initial-left="450" 
+                    data-initial-top="156"
+                    data-initial-scale="4"
+                    data-final-scale="1"  
+                    data-final-left="450" 
+                    data-final-top="156" 
+                    data-duration="0.5" 
+                    data-fade-start="0" 
+                    data-delay="0.5">
+                    Hello
+                    </div>
+                    
+                    <div class="bannerscollection_zoominout_text_line textElement11_opportuneFullScreen" 
+                    data-initial-left="450" 
+                    data-initial-top="586" 
+                    data-initial-scale="0"
+                    data-final-scale="1" 
+                    data-final-left="450" 
+                    data-final-top="586" 
+                    data-duration="0.5" 
+                    data-fade-start="0" 
+                    data-delay="1.2">
+                    <a href="">Discover more</a>
+                    </div>
+                    
+                    <div class="bannerscollection_zoominout_text_line textElement12_opportuneFullScreen" 
+                    data-initial-left="370" 
+                    data-initial-top="250" 
+                    data-initial-skew="-50deg,0deg"
+                    data-final-skew="0deg,0deg" 
+                    data-final-left="370" 
+                    data-final-top="250" 
+                    data-duration="0.5" 
+                    data-fade-start="0" 
+                    data-delay="2">
+                  My name is Trevina
+                    </div>
+               </div> <!--End First Slide Texts-->      
+                  
+               
+                <div id="bannerscollection_zoominout_photoText2" class="bannerscollection_zoominout_texts">
+                    <div class="bannerscollection_zoominout_text_line textElement21_opportuneFullScreen" 
+                    data-initial-left="1148" 
+                    data-initial-top="0" 
+                    data-final-left="1148" 
+                    data-final-top="190" 
+                    data-duration="0.5" 
+                    data-fade-start="0" 
+                    data-delay="0">
+                    For each <a href="">image</a>
+                    </div>
+                    
+                    <div class="bannerscollection_zoominout_text_line textElement22_opportuneFullScreen" 
+                    data-initial-left="848" 
+                    data-initial-top="162" 
+                    data-final-left="1151" 
+                    data-final-top="162" 
+                    data-duration="0.5" 
+                    data-fade-start="0" 
+                    data-delay="0.3">
+                    You can define optional external link
+                    </div>
+               </div><!--End Second Slide Texts-->   
+               
+           
+                <div id="bannerscollection_zoominout_photoText4" class="bannerscollection_zoominout_texts">
+                    <div class="bannerscollection_zoominout_text_line textElement41_opportuneFullScreen" 
+                    data-initial-left="480" 
+                    data-initial-top="114" 
+                    data-initial-skew="80deg,40deg"
+                    data-final-skew="0deg,0deg"
+                    data-final-left="1086" 
+                    data-final-top="114" 
+                    data-duration="0.5" 
+                    data-fade-start="0" 
+                    data-delay="0">
+                    Animated text from any direction
+                    </div>
+                    
+                    <div class="bannerscollection_zoominout_text_line textElement42_opportuneFullScreen" 
+                    data-initial-left="1900" 
+                    data-initial-top="155" 
+                    data-initial-skew="80deg,40deg"
+                    data-final-skew="0deg,0deg"
+                    data-final-left="1086" 
+                    data-final-top="155" 
+                    data-duration="0.5" 
+                    data-fade-start="0" 
+                    data-delay="0.3">
+                    top, bottom, left and right
+                    </div>
+                    
+                    <div class="bannerscollection_zoominout_text_line textElement43_opportuneFullScreen" 
+                    data-initial-left="1086" 
+                    data-initial-top="550" 
+                    data-initial-skew="80deg,40deg"
+                    data-final-skew="0deg,0deg"
+                    data-final-left="1086" 
+                    data-final-top="221" 
+                    data-duration="0.8" 
+                    data-fade-start="0" 
+                    data-delay="0.5">
+                    Any color, CSS and HTML formated
+                    </div>               
+               </div> <!--End Fourth Slide Texts-->
+                                         
+                           
+           </div>  
 
-  <p class="desc_more">Getting to university and going into arts in order to become a graphic and web designer was probably the best choice I have ever did. This is where I belong, where I express and explore myself along with love of creation and imagination.</p>
 
- <p class="orange"> <strong> Feel free to have a look on what I do and don’t hesitate to contact me!</strong></p>
- 
-</div>
-</section>
- 
- <script type="text/javascript" src="script.js"></script>
 
- 
 </body>
 </html>
