@@ -1,0 +1,467 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family:avenir_black;
+    src: url(fonts/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+    font-family:avenir_medium;
+    src: url(fonts/AvenirLTStd-Medium.otf);
+}
+
+@font-face {
+    font-family:avenir_next_medium;
+    src: url(fonts/AvenirNextLTPro-MediumCn.otf);
+}
+
+
+@font-face {
+    font-family:avenir_next_demi;
+    src: url(fonts/AvenirNextLTPro-Demi.otf);
+}
+
+
+
+
+body{
+  margin:0;
+  padding: 0;
+}
+
+/*header*/
+
+header {
+  padding-top:3.25rem;
+  
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 100%;
+ 
+}
+
+
+
+.logo{
+
+  float: left;
+  padding-left: 9.8rem;
+}
+  
+
+ul{
+  padding-right: 10.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+  
+  /*
+  width:366px;
+  
+  position: absolute;
+  margin-left: 80rem;
+  margin-top: 7.6rem;
+  */
+
+
+nav ul li {
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+}
+
+ul li a{
+  
+  padding-left: 30px;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  color:#545454;
+  font-family:avenir_medium;
+}
+
+ul li a:hover{
+  color:#d65050;
+
+}
+
+ul li a.active{
+  color:#d65050;
+}
+
+@media (max-width: 47rem) {
+  ul{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   width:47rem;
+  }
+}
+
+
+/*homepage*/
+
+
+.homepage{
+  
+
+  background-image: url(image/bgimage2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top:22rem;
+}
+
+
+.slider2{
+  
+}
+
+
+
+.slider-text{
+  color: white;
+
+  }
+
+.slider-text2{
+}
+
+.slider-line {
+  width:157px; 
+  height:2px; 
+  background:#d65050;
+  margin-top: -35px;
+}
+
+.button{
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  
+  font-family:avenir_black;
+  font-size: 18px;
+  line-height: 50px;
+  text-transform: uppercase;
+  
+  border: 2px solid #d65050;
+  border-radius:4px;
+  width:210px;
+  height:50px;
+  background-color:#d65050;
+  
+ 
+}
+
+.button:hover{
+   border: 2px solid #d65050;
+   background-color:transparent;
+   
+}
+
+
+.title{
+  padding: 0;
+  margin: 0;
+  
+}
+
+h1{
+  font-family:avenir_black;
+  font-size:48px;
+  
+  text-align: center;
+  color:#d65050;
+}
+
+
+h2{
+  font-family:avenir_medium;
+  font-size:27px;
+  color:white;
+}
+
+
+
+.title-more{
+  color:#d65050; 
+  font-family:avenir_black;
+  
+}
+
+h3{
+  font-family: sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+p{
+  font-size:18px;
+  font-family: avenir_medium;
+  color:#545353;
+  width:61rem;
+}
+
+@media (max-width: 70rem) {
+  p{
+    max-width: 50rem;
+  }
+}
+
+@media (max-width: 47rem) {
+  p{
+    max-width: 26rem;
+  }
+}
+
+@media (max-width: 25rem) {
+  p{
+    max-width: 18rem;
+  }
+}
+
+
+
+/*More*/
+
+#more{
+  height:374px;
+  background-image: url(image/design.png);
+  background-position:left center;
+  background-repeat: no-repeat;
+  margin-left: -38px;
+  margin-top:4rem;
+  transform: translateX(40px);
+  transition: 500ms  ease-in-out;
+}
+
+.group{
+  padding-left: 9.5rem;
+  padding-top: 66px;
+}
+
+.opportunities{
+  font-family: avenir_medium;
+  font-weight: 500;
+  font-size:30px;
+  color: #d65050;
+}
+
+.desc_more{
+  margin-top:-20px;
+}
+
+.orange{
+  margin-top:-15px;
+  color:#d65050;
+}
+
+/*About*/  
+
+.title{
+  padding-top:16.9rem;
+  color:#d65050; 
+  font-family:avenir_black;
+}
+
+
+#About{
+  margin:0;
+  padding: 0;
+  height:800px;
+  background-image: url(image/design.png);
+  background-position:left center;
+  background-repeat: no-repeat;
+  }
+
+.opportunities .student{
+padding-top: 80px;
+}
+
+.text{
+  padding-left: 9.8rem;
+}
+
+
+/*Projects*/  
+  
+
+.title-projects{
+  padding-top:15.8rem;
+  color:#d65050; 
+  font-family:avenir_black;
+}
+
+
+.projects{
+  
+  padding-left: 9.8rem;
+  padding-top: 11rem;
+  display:flex;
+  justify-content:space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  width:74.5rem;
+}
+
+.project-image{
+  padding-top: 90px;
+    transition: all 500ms;
+    -webkit-transition: all 500ms; 
+}
+
+/*
+.project-image p{
+  opacity:0;
+  position: absolute;
+  margin: 0;
+  top:0; left:0;
+  width: 100%;
+  height: 100%;
+  
+  background-color: rgba(0,0,0,0.5);
+  
+  display: flex;
+  justify-content: flex-start;
+  
+  color: white;
+  font-family: avenir
+  
+  transition: opacity 200ms ease-in;
+}
+*/
+
+.project-image:hover{
+  
+  
+  transform: scale(1.2);
+  transition: ease-in;
+  opacity: 1;
+}
+
+.project-image:hover p{
+  opacity: 1;
+}
+
+.projects-line{
+  float: right;
+  -webkit-transform: rotate(90deg);
+  width:630px; 
+  height:2px; 
+
+  margin-left:1400px;
+  background:#d65050;
+}
+
+.department{
+  -webkit-transform: rotate(90deg);
+  font-size: 30px;
+  color:#737373;
+  font-family: avenir_black;
+  padding-bottom:1700px;
+}
+
+.overlay{
+  
+}
+
+
+/*Helwa Ya Baladi*/  
+.description{
+  font-size: 22px;
+  color:#d65050;
+  font-family: avenir_black;
+  line-height: 2px;
+  margin-top: 30px;
+}
+
+.explication{
+  font-size: 22px;
+  color:black;
+  font-family:avenir_next_medium;
+  line-height: 4px;
+  
+}
+
+.project-analysis{
+  margin-top: 60px;
+  widows: 70px;
+}
+
+.sub-title{color:#d65050;}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+/*Contact*/  
+.title.contact{
+  padding-left: 9.8rem;
+}
+
+.image{
+  padding-top: 40px;
+}
+
+.hope{
+  
+  margin-top:0px;
+  font-family:avenir_black;
+  font-size:50px;
+  color: white;
+  text-transform: uppercase;
+  line-height:1px;
+}
+
+
+.hope.soon{
+ color:#d65050;
+  text-shadow: 0px 0px 0px black ;
+}
+
+.big{
+  margin-top: -285px;
+  position: absolute;
+}
+
+.vertical-line{
+  -webkit-transform: rotate(90deg);
+  width:95px; 
+  height:2px; 
+  background:#d65050;
+  margin-top:200px;
+}
+
+.contact-info{
+  font-family: avenir_next_demi;
+  color:#d65050;
+  font-size:27px;
+  line-height:7px;
+
+  
+}
+
+.contact-info.gmail{
+  margin-top:130px;
+}
