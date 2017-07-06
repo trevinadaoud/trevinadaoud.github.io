@@ -183,7 +183,7 @@
         outline: none; }
       .sy-controls li a:after {
         content: "";
-        background-image: url("/images/arrows.svg");
+        background-image: url("/image/arrows.svg");
         background-repeat: no-repeat;
         -webkit-background-size: cover;
                 background-size: cover;

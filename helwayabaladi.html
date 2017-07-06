@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Helwa Ya baladi</title>
+  
    <link rel="stylesheet" href="style.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-   
-<script type="text/javascript" src="js/script.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="/js/slippry.min.js"></script>
-<link rel="stylesheet" href="/css/slippry.css" />
-   
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <script src="js/slippry.min.js"></script>
+   <script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+		
+    <link rel="stylesheet" href="css/slippry.css">
+
 </head>
 
 
@@ -35,6 +36,8 @@
   <h4 class="description">The Egyptian Artisanal House</h4>
   <p class="explication">Bachelor Project in Lebanon</p>
   
+  
+  
   <section class="project-analysis">
   <p>
   It is a building located in Downtown in Beirut and built in the same style of houses in the village of Aswan (Egypt). It would have the same feeling as a house in Aswan from its exterior and would have its own particular style in the interior with colorful walls decorated with beautiful drawings.</p>
@@ -46,58 +49,79 @@
   The second floor would be made up of workshops divided by glass partitions for the artisans to work in. This would encourage the clients› confidence in the craftsmen themselves, and would create a sense of value and appreciation for the process of work.<strong> The artisanal house would have its own pattern, and its own particular identity.</strong></p>
   </section>
   
+  	<section class="demo_wrapper">
+			<article class="demo_block">
+				
+			<ul id="demo1">
+			
+				<li><a href="#slide1"><img src="image/helwayabaladi/letter%20head%20envelops.png"></a></li>
+				<li><a href="#slide2"><img src="image/helwayabaladi/book.png"></a></li>
+				<li><a href="#slide3"><img src="image/helwayabaladi/gift%20box.png"></a></li>
+			</ul>
+			</article>
+		</section>
+
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					// transition: 'fade',
+					// useCSS: true,
+					// speed: 1000,
+					// pause: 3000,
+					// auto: true,
+					// preload: 'visible',
+					// autoHover: false
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>
   
-  <!-- Slider -->
   
-  <div id="myCarousel" class="carousel slide">
-    <!--
-   <ol class="carousel-indicators">
-     <li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
-     <li data-target = "#myCarousel" data-slide-to = "1"></li>
-     <li data-target = "#myCarousel" data-slide-to = "2"></li>
-     
-  </ol>
-   -->
+  
+  
+  
+  
+  </section>
    
-   <div class="slippry-demo">
-    
-     <div class="item active">
-    <a href="#slide1"><img src="image/helwayabaladi/letter%20head%20envelops.png" alt="letterhead" class="img-responsive"></a>
-       <div class="carousel-caption">
-         <h3>COLLATERAL</h3>
-       </div>
-     </div>
-     
-      <div class="item">
-      <a href="#slide2"> <img src="image/helwayabaladi/book.png" alt="book" class="img-responsive"></a>
-        <div class="carousel-caption">
-         <h3>BOOK</h3>
-       </div>
-     </div>
-     
-     <div class="item">
-       <a href="#slide3"><img src="image/helwayabaladi/gift%20box.png" alt="gift box" class="img-responsive"></a>
-       <div class="carousel-caption">
-       <h3>GIFT BOX</h3>
-       </div>
-       </div>
-       
-   </div>
-    
-    <a class="carousel-control left" href="#myCarousel" data-slide = "prev">
-      <span class="icon-prev"></span></a>
-    
-    <a class="carousel-control right" href="#myCarousel" data-slide = "next">
-      <span class="icon-next"></span></a> 
-    
-    
-  </div>
+   
+   
   
-</section>
+   
+   
+   
+    
 
 
 
 
-
+<script src="js/slippry.min.js"></script>
 </body>
 </html>
