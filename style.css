@@ -330,6 +330,7 @@ padding-top: 80px;
   padding-top: 90px;
     transition: all 500ms;
     -webkit-transition: all 500ms; 
+  
 }
 
 /*
@@ -359,6 +360,7 @@ padding-top: 80px;
   transform: scale(1.2);
   transition: ease-in;
   opacity: 1;
+  -webkit-filter: grayscale(100%);
 }
 
 .project-image:hover p{
@@ -453,8 +455,6 @@ padding-top: 80px;
   z-index: 2;
 
 }
-
-
 
 
 /*Contact*/  
