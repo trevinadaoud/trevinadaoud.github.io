@@ -281,8 +281,8 @@ p{
 
 .title{
   padding-top:16.9rem;
-  color:#d65050; 
-  font-family:avenir_black;
+  padding-left: 9.8rem;
+  padding-right: 11.125rem;
 }
 
 
@@ -327,6 +327,7 @@ padding-top: 80px;
 }
 
 .project-image{
+  -webkit-filter: brightness(100%);
   padding-top: 90px;
     transition: all 500ms;
     -webkit-transition: all 500ms; 
@@ -360,11 +361,17 @@ padding-top: 80px;
   transform: scale(1.2);
   transition: ease-in;
   opacity: 1;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: brightness(70%);
+  
 }
 
-.project-image:hover p{
-  opacity: 1;
+a.helwa:hover{
+  display: block;
+  background-image:url(image/projects-name/helwayabaladi.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  
+  
 }
 /*
 .projects-line{
