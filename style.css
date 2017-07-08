@@ -301,6 +301,7 @@ padding-top: 80px;
 
 .text{
   padding-left: 9.8rem;
+  padding-right: 11.125rem;
 }
 
 
@@ -363,7 +364,7 @@ padding-top: 80px;
 .project-image:hover p{
   opacity: 1;
 }
-
+/*
 .projects-line{
   float: right;
   -webkit-transform: rotate(90deg);
@@ -373,6 +374,7 @@ padding-top: 80px;
   margin-left:1400px;
   background:#d65050;
 }
+*/
 
 .department{
   -webkit-transform: rotate(90deg);
@@ -411,9 +413,49 @@ padding-top: 80px;
 
 .sub-title{color:#d65050;}
 
-.carousel-control.left, .carousel-control.right {
-    background-image: none
+.main-picture{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -20px;
+
 }
+
+
+  
+.project-line{
+  margin: 0 auto;
+  text-align: center;
+  
+  -webkit-transform: rotate(90deg);
+  width:95px; 
+  height:2px; 
+  background:#d65050;
+  margin-top:200px; 
+}
+
+
+#demo1{
+  
+}
+
+.demo_wrapper{
+  padding-top: 10rem;
+}
+
+.name-project{
+  position: relative;
+  padding-top:10rem;
+  
+}
+
+.main-project{
+  position: absolute;
+  z-index: 2;
+
+}
+
+
+
 
 /*Contact*/  
 .title.contact{
@@ -421,7 +463,7 @@ padding-top: 80px;
 }
 
 .image{
-  padding-top: 40px;
+  padding-top:16.7rem;
 }
 
 .hope{

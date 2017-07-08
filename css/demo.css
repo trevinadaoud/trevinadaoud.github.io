@@ -5,12 +5,12 @@ body {
 	font-size: 14px;
 }
 .demo_wrapper {
-	width: 50%;
-	margin: 0 auto;
+ width:100%;
+
 }
 @media only screen and (max-device-width: 800px), screen and (max-width: 800px) {
   .demo_wrapper {
-    width: 80%;
+    width: 100%;
   }  
 }
 .demo_block {
