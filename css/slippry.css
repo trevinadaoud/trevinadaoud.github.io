@@ -55,6 +55,7 @@
   100% {
     -o-transform: translateY(-20%) translateX(-10%);
        transform: translateY(-20%) translateX(-10%); } }
+
 @keyframes right-left {
   0% {
     -webkit-transform: translateY(0%) translateX(10%);
@@ -64,6 +65,7 @@
     -webkit-transform: translateY(-20%) translateX(-10%);
          -o-transform: translateY(-20%) translateX(-10%);
             transform: translateY(-20%) translateX(-10%); } }
+
 /* added to the original element calling slippry */
 .sy-box.sy-loading {
   background: url("/images/sy-loader.gif") 50% 50% no-repeat;
@@ -73,6 +75,8 @@
   .sy-box.sy-loading .sy-slides-wrap, .sy-box.sy-loading .sy-pager {
     visibility: hidden; }
 
+
+
 /* element that wraps the slides */
 .sy-slides-wrap {
   
@@ -80,8 +84,9 @@
   margin: 0 auto;
   text-align: center;
   position: relative;
-  height: 100%;
-  width: 100%;}
+  height: 70%;
+  width: 70%;
+}
 
   .sy-slides-wrap:hover .sy-controls {
     display: block; }
@@ -126,7 +131,7 @@
   text-align: center;
   text-align: center;
   position: absolute;
-  width: 80%;
+  width: 100%;
   z-index: 2; }
 
   .sy-slide.kenburns {
@@ -203,11 +208,14 @@
     .sy-controls li.sy-prev {
       left: 0;
       top: 0; }
+
       .sy-controls li.sy-prev a:after {
         background-position: -5% 0; }
+
     .sy-controls li.sy-next {
       right: 0;
       top: 0; }
+
       .sy-controls li.sy-next a:after {
         background-position: 105% 0; }
     .sy-controls li a {
@@ -241,11 +249,15 @@
         margin-top: -1.4em;
         margin-left: -1.4em;
         border-radius: 50%; }
+
   @media only screen and (max-device-width: 600px) {
+   
     .sy-controls {
       display: block; }
+    
       .sy-controls li {
         min-width: 2.1em; }
+    
         .sy-controls li a:after {
           width: 1.4em;
           height: 1.4em;
@@ -253,53 +265,60 @@
           margin-left: -0.7em; } }
 
 /* captions, styled fo the overlay variant */
+
+
+.sy-caption {
+  width: 30px;
+}
+
 .sy-caption-wrap {
 
+
   position: absolute;
-  
-  z-index: 12;
-  top: -3%;
-  left: 25%; }
+   z-index: 12;
+  top: -5%;
+  left: -3%; }
+
+
   .sy-caption-wrap .sy-caption {
+  
     position: relative;
     left: -50%;
     font-family:avenir_black;
     text-shadow: black 0.01em 0.01em 0.09em;
-    font-size: 40pt;
+    font-size: 50pt;
     color:white;
     padding: 0.4em 1em;
     border-radius: 1.2em; }
-    .sy-caption-wrap .sy-caption a:link, .sy-caption-wrap .sy-caption a:visited {
-      color: #e24b70;
-      
-      font-weight: 600;
-      text-decoration: none; }
-    .sy-caption-wrap .sy-caption a:hover, .sy-caption-wrap .sy-caption a:focus {
-      text-decoration: underline; }
+
+   
   @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
     .sy-caption-wrap {
       left: 0;
       bottom: 0.4em; }
+    
       .sy-caption-wrap .sy-caption {
         left: 0;
         padding: 0.2em 0.4em;
         font-size: 0.92em;
-        border-radius: 0; } }
+        font-size: 30pt;
+        
+        
+        } }
 
 /* pager bubbles */
 .sy-pager {
   clear: both;
   display: block;
   width: 100%;
-  margin: 1em 0 0;
-  padding: 0;
+  margin: em 0 0;
+  padding: 0px;
   list-style: none;
   text-align: center; }
 
   .sy-pager li {
     display: inline-block;
     width: 0.5em;
-    
     margin: 0 2em 0 0;
    }
     .sy-pager li.sy-active a {
@@ -313,13 +332,14 @@
       text-indent: -9999px;
       -webkit-background-size: 2em 2em;
               background-size: 2em;
-     width: 0.5em;
-    height: 1.4em;
+     width: em;
+     height: 0.3em;
  }
       .sy-pager li a:link, .sy-pager li a:visited {
         opacity: 1.0; }
       .sy-pager li a:hover, .sy-pager li a:focus {
         opacity: 0.6; }
+
 
 /* element to "keep/ fill" the space of the content, gets intrinsic height via js */
 .sy-filler {
