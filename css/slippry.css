@@ -12,6 +12,12 @@
  * Released under the MIT license - http://opensource.org/licenses/MIT
  */
 /* kenBurns animations, very basic */
+
+@font-face {
+    font-family:avenir_black;
+    src: url(fonts/AvenirLTStd-Black.otf);
+}
+
 @-webkit-keyframes left-right {
   0% {
     -webkit-transform: translateY(-20%) translateX(-10%);
@@ -69,31 +75,45 @@
 
 /* element that wraps the slides */
 .sy-slides-wrap {
+  
+  margin-right: -170px;
+  margin: 0 auto;
+  text-align: center;
   position: relative;
   height: 100%;
-  width: 100%; }
+  width: 100%;}
+
   .sy-slides-wrap:hover .sy-controls {
     display: block; }
 
 /* element that crops the visible area to the slides */
 .sy-slides-crop {
+  
   height: 100%;
   width: 100%;
   position: absolute;
   overflow: hidden; }
 
 /* list containing the slides */
+
 .sy-list {
+    
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
-  position: absolute; }
+  position: absolute;
+}
+
   .sy-list.horizontal {
     -webkit-transition: left ease;
          -o-transition: left ease;
             transition: left ease; }
+
   .sy-list.vertical {
     -webkit-transition: top ease;
          -o-transition: top ease;
@@ -101,12 +121,20 @@
 
 /* single slide */
 .sy-slide {
+  
+  margin: 0 auto;
+  text-align: center;
+  text-align: center;
   position: absolute;
-  width: 100%;
+  width: 80%;
   z-index: 2; }
+
   .sy-slide.kenburns {
+  margin: 0 auto;
+  text-align: center;
     width: 140%;
     left: -20%; }
+
     .sy-slide.kenburns.useCSS {
       -webkit-transition-property: opacity;
            -o-transition-property: opacity;
@@ -125,20 +153,31 @@
         -webkit-animation-fill-mode: forwards;
              -o-animation-fill-mode: forwards;
                 animation-fill-mode: forwards; }
+
   .sy-slide.sy-active {
     z-index: 3; }
+
   .sy-slide > img {
+ 
+     margin: 0 auto;
+  text-align: center;
     margin: 0;
     padding: 0;
     display: block;
     width: 100%;
     border: 0; }
+
   .sy-slide > a {
+    
+     margin: 0 auto;
+  text-align: center;
     margin: 0;
     padding: 0;
     display: block;
     width: 100%; }
+
     .sy-slide > a > img {
+
       margin: 0;
       padding: 0;
       display: block;
@@ -160,6 +199,7 @@
     min-width: 4.2em;
     height: 100%;
     z-index: 33; }
+
     .sy-controls li.sy-prev {
       left: 0;
       top: 0; }
@@ -214,19 +254,24 @@
 
 /* captions, styled fo the overlay variant */
 .sy-caption-wrap {
+
   position: absolute;
-  bottom: 2em;
+  
   z-index: 12;
-  left: 50%; }
+  top: -3%;
+  left: 25%; }
   .sy-caption-wrap .sy-caption {
     position: relative;
     left: -50%;
-    background-color: rgba(0, 0, 0, 0.54);
-    color: #fff;
+    font-family:avenir_black;
+    text-shadow: black 0.01em 0.01em 0.09em;
+    font-size: 40pt;
+    color:white;
     padding: 0.4em 1em;
     border-radius: 1.2em; }
     .sy-caption-wrap .sy-caption a:link, .sy-caption-wrap .sy-caption a:visited {
       color: #e24b70;
+      
       font-weight: 600;
       text-decoration: none; }
     .sy-caption-wrap .sy-caption a:hover, .sy-caption-wrap .sy-caption a:focus {
