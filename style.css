@@ -461,13 +461,17 @@ a.helwa:hover{
 }
 
 
-#demo1{
-  
+.demo-block{
+
+    
 }
 
 .demo_wrapper{
-  padding-top: 10rem;
+
+  padding-top: 7rem;
+   
 }
+
 
 .name-project{
   position: relative;
