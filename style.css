@@ -327,12 +327,30 @@ padding-top: 80px;
 }
 
 .project-image{
+  position: relative;
   -webkit-filter: brightness(100%);
   padding-top: 90px;
     transition: all 500ms;
     -webkit-transition: all 500ms; 
   
 }
+
+.helwa{
+ 
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  z-index: -1;
+  display:none;
+}
+
+.project-image:hover.helwa{
+   background-image: url(image/projects-name/helwayabaladi.png);
+  display:block;
+  z-index: 200;
+}
+
+
 
 /*
 .project-image p{
