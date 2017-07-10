@@ -6,6 +6,13 @@
    <link rel="stylesheet" href="style.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content=" BELOW is a non profit organization for the preservation of marine life - Branding Project.">
+   
+   
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <script src="js/slippry.min.js"></script>
+   <script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+		
+    <link rel="stylesheet" href="css/slippry.css">
 </head>
 
 
@@ -23,7 +30,7 @@
   
 <section class="text">
   
-  <h2 class="title">Below</h2>
+  <h2 class="title-project">Below</h2>
   <h4 class="description">Non Profit organization</h4>
   <p class="explication">Project in SPD- Visual design program- Identity class</p>
     <p class="explication">Group project by Alaina Klaus- Michel Chrabieh and Trevina Daoud</p>
@@ -36,7 +43,73 @@
   <p>The logotype is going to change from an execution to another, we have 12 different icons and colors (combination and contrast)</p>
   </section>
   
-  </section>
+  
+    <div class="project-line"></div>
+   <div class="name-project"><img src="image/projects-name/Below-word.png"></div>
+<section class="main-picture"><img src="image/helwayabaladi/business%20card.jpg" width="800px" alt="Business Card"> </section> 
+    
+    
+ 
+  	<section class="demo_wrapper">
+			<article class="demo_block">
+				
+			<ul id="demo1">
+			
+				<li><a href="#slide1"><img src="image/helwayabaladi/letter%20head%20envelops.png" width="720px" alt="Collateral"></a></li>
+				<li><a href="#slide2"><img src="image/helwayabaladi/book.png" alt="Book"></a></li>
+				<li><a href="#slide3"><img src="image/helwayabaladi/gift%20box.png" alt="Gift Box"></a></li>
+			</ul>
+			</article>
+		</section>
+		</section>
+
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					// transition: 'fade',
+					// useCSS: true,
+					// speed: 1000,
+					// pause: 3000,
+					// auto: true,
+					// preload: 'visible',
+					// autoHover: false
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>
+  
+
+  
+  
+  <script src="js/slippry.min.js"></script>
   
 </body>
 </html>

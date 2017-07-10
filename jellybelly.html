@@ -6,6 +6,13 @@
    <link rel="stylesheet" href="style.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="Redesign of the Jelly Belly website, a parallax one.">
+   
+   
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <script src="js/slippry.min.js"></script>
+   <script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+		
+    <link rel="stylesheet" href="css/slippry.css">
 </head>
 
 
@@ -24,17 +31,92 @@
   
 <section class="text">
   
-  <h2 class="title">Jelly Belly</h2>
+  <h2 class="title-project">Jelly Belly</h2>
   <h4 class="description">Redesign</h4>
   <p class="explication">Project in Academie Libanaise des Beaux Arts -</p>
   <p class="explication">Multimedia and Digital Design</p>
   
   <section class="project-analysis">
   <p>Redesign of the website. I chose to work on a parallax website, where an animation of the jelly beans falling will be from a page to another. Covey the message and information in a fun way.</p>
-  </section>
+  </section> 
   
-</section>
+     <div class="project-line"></div>
+   <div class="name-project"><img src="image/projects-name/JELLYBELLY-word.png"></div>
+<section class="main-jellybelly"><img src="image/projects-name/jellybelly-main.png" width="800px" alt="Business Card"> </section> 
+    
+    
+ 
+  	<section class="demo_wrapper">
+			<article class="demo_block">
+				
+			<ul id="demo1">
+			
+				<li><a href="#slide1"><img src="image/JellyBelly/09_s09.jpg" width="720px"></a></li>
+				<li><a href="#slide2"><img src="image/JellyBelly/15_s15.jpg"></a></li>
+				<li><a href="#slide3"><img src="image/JellyBelly/22_s22.jpg"></a></li>
+				<li><a href="#slide3"><img src="image/JellyBelly/23_s23.jpg"></a></li>
+				<li><a href="#slide3"><img src="image/JellyBelly/34_s34.jpg"></a></li>
+				<li><a href="#slide3"><img src="image/JellyBelly/37_s37.jpg"></a></li>
+				<li><a href="#slide3"><img src="image/JellyBelly/38_s38.jpg"></a></li>
+				<li><a href="#slide3"><img src="image/JellyBelly/39_s39.jpg"></a></li>
+				<li><a href="#slide3"><img src="image/JellyBelly/animation-jelllybelly.gif"></a></li>
+			</ul>
+			</article>
+		</section>
+		</section>
+
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					// transition: 'fade',
+					// useCSS: true,
+					// speed: 1000,
+					// pause: 3000,
+					// auto: true,
+					// preload: 'visible',
+					// autoHover: false
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>
+  
+    
+     
+      
+        
+
+ 
+ 
   
   
+  <script src="js/slippry.min.js"></script>
 </body>
 </html>

@@ -280,6 +280,7 @@ p{
 /*About*/  
 
 .title{
+  color:#d65050;
   padding-top:16.9rem;
   padding-left: 9.8rem;
   padding-right: 11.125rem;
@@ -448,6 +449,13 @@ a.helwa:hover{
 }
 
 
+.title-project{
+  
+  font-family: avenir_black;
+  color:#d65050;
+  padding-top:16.9rem;
+  padding-right: 11.125rem;
+}
   
 .project-line{
   margin: 0 auto;
@@ -474,6 +482,8 @@ a.helwa:hover{
 
 
 .name-project{
+  margin: 0 auto;
+  text-align: center;
   position: relative;
   padding-top:10rem;
   
@@ -484,6 +494,14 @@ a.helwa:hover{
   z-index: 2;
 
 }
+
+.main-jellybelly{
+ margin: 0 auto;
+  text-align: center;
+  margin-top: -50px;
+
+}
+
 
 
 /*Contact*/  

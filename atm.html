@@ -6,6 +6,13 @@
    <link rel="stylesheet" href="style.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="Redesign of the ATM Web App.">
+   
+   
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <script src="js/slippry.min.js"></script>
+   <script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+		
+    <link rel="stylesheet" href="css/slippry.css">
 </head>
 
 
@@ -23,7 +30,7 @@
  </header> 
   
 <section class="text">
-  <h2 class="title">ATM Application</h2>
+  <h2 class="title-project">ATM Application</h2>
   <h4 class="description">Responsive Web App</h4>
   <p class="explication">Project in SPD Milan - Digital Typography</p>
   <p class="explication">Web design Program</p>
@@ -49,7 +56,72 @@
  <p> https://invis.io/3KABVGJY9#/217594628_Steps</p>
 </section>
  
- </section>
+   <div class="project-line"></div>
+   <div class="name-project"><img src="image/projects-name/ATM.png"></div>
+<section class="main-picture"><img src="image/projects-name/ATM%20picture.png" width="800px" alt="Business Card"> </section> 
+    
+    
+ 
+  	<section class="demo_wrapper">
+			<article class="demo_block">
+				
+			<ul id="demo1">
+			
+				  <!--<li><a href="#slide1"><img src="image/ATM/homepagemockup.png" width="30%" alt="HOME PAGE"></a></li>
+				<li><a href="#slide2"><img src="image/ATM/menu.png" alt="MENU"></a></li>
+				<li><a href="#slide3"><img src="image/ATM/" alt="Gift Box"></a></li>-->
+			</ul>
+			</article>
+		</section>
+		</section>
+
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					// transition: 'fade',
+					// useCSS: true,
+					// speed: 1000,
+					// pause: 3000,
+					// auto: true,
+					// preload: 'visible',
+					// autoHover: false
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>
+  
+ 
+
+  
+  <script src="js/slippry.min.js"></script>
   
 </body>
 </html>
