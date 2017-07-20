@@ -305,6 +305,10 @@ padding-top: 80px;
   padding-right: 11.125rem;
 }
 
+.link-contact{
+  text-decoration: none;
+  color: #d65050;
+}
 
 /*Projects*/  
   
@@ -497,8 +501,8 @@ a.helwa:hover{
 
 .main-jellybelly{
  margin: 0 auto;
-  text-align: center;
-  margin-top: -50px;
+ text-align: center;
+ margin-top: -50px;
 
 }
 
