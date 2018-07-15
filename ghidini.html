@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghidini 1961 Website - Trevina Daoud</title>
+   <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Redesign Ghidini Website. GHIDINI 1961 – The Brass Design Company of Excellence ">
+   
+   
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <script src="js/slippry.min.js"></script>
+   <script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+		
+    <link rel="stylesheet" href="css/slippry.css">
+   
+</head>
+
+
+<body>
+  
+<header>
+  <a  class="logo" href="index.html"> <img src="image/Logo.png" alt="logo" width="55px"></a>
+   <nav>
+     <ul>
+      <li><a href="Aboutme.html">About me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contactme.html">Contact me</a></li>
+      </ul>
+   </nav>
+ </header> 
+  
+<section class="text">
+   
+  <h2 class="title-project">Ghidini 1961</h2>
+  <h4 class="description">Redesign of the website</h4>
+  <p class="explication">Project in SPD Milan - Digital Art Direction
+  
+  </p>
+   <p class="explication">Web design Program</p>
+   <section class="project-analysis">
+  
+  <p>GHIDINI 1961 – The Brass Design Company of Excellence.
+  A specialist in die casting brass, aluminium and zamak, the company excels in combining advanced technologies and rapid prototyping with traditional craft skills. </p>
+     <p>Three main challenges : </p>
+     <p>1- Develop Sensitivity to Materials and Design </p>
+     <p>2- Brand Positioning</p>
+     <p>3- Storytelling</p>
+  <p>The main Goal is to build brand awareness through creative storytelling by leveraging the designers and expertise of Ghidini 1961.</p>
+</section>
+ 
+ 
+   <div class="project-line"></div>
+   <div class="name-project"><img src="image/projects-name/TUESDAYS-word.png"></div>
+<section class="main-picture"><img src="image/projects-name/tuesdays-main.png" width="800px" alt="Tuesdays Magazine"> </section> 
+    
+    
+ 
+  	<section class="demo_wrapper">
+			<article class="demo_block">
+				
+			<ul id="demo1">
+			
+				<li><a href="#slide1"><img src="image/Tuesdays/cover.png" width="70" alt="COVER"></a></li>
+				<li><a href="#slide2"><img src="image/Tuesdays/Fashion-story.png" alt="FASHION STORY"></a></li>
+				<li><a href="#slide3"><img src="image/Tuesdays/Fashion-story2.png"></a></li>
+				<li><a href="#slide3"><img src="image/Tuesdays/fashion-story3.png"></a></li>
+				<li><a href="#slide3"><img src="image/Tuesdays/lady-gaga.png" alt="ARTICLE" ></a></li>
+				<li><a href="#slide3"><img src="image/Tuesdays/articles.png"></a></li>
+				<li><a href="#slide3"><img src="image/Tuesdays/quotes.png"></a></li>
+				
+			</ul>
+			</article>
+		</section>
+		</section>
+
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					// transition: 'fade',
+					// useCSS: true,
+					// speed: 1000,
+					// pause: 3000,
+					// auto: true,
+					// preload: 'visible',
+					// autoHover: false
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>
+  
+ 
+  
+  
+  
+  <script src="js/slippry.min.js"></script>
+</body>
+</html>

@@ -306,8 +306,8 @@ padding-top: 80px;
 }
 
 .link-contact{
-  text-decoration: none;
-  color: #d65050;
+  color:#d65050;
+  font-size: 22px;
 }
 
 /*Projects*/  
@@ -333,7 +333,6 @@ padding-top: 80px;
 
 .project-image{
   position: relative;
-  -webkit-filter: brightness(100%);
   padding-top: 90px;
     transition: all 500ms;
     -webkit-transition: all 500ms; 
@@ -449,7 +448,10 @@ a.helwa:hover{
   margin: 0 auto;
   text-align: center;
   margin-top: -20px;
+}
 
+.color{
+  color:#d65050;
 }
 
 
@@ -469,7 +471,7 @@ a.helwa:hover{
   width:95px; 
   height:2px; 
   background:#d65050;
-  margin-top:200px; 
+  margin-top:150px; 
 }
 
 
@@ -490,12 +492,13 @@ a.helwa:hover{
   text-align: center;
   position: relative;
   padding-top:10rem;
+  z-index: -3;
   
 }
 
 .main-project{
   position: absolute;
-  z-index: 2;
+  z-index:5;
 
 }
 
@@ -503,9 +506,13 @@ a.helwa:hover{
  margin: 0 auto;
  text-align: center;
  margin-top: -50px;
-
 }
 
+.main-oakley{
+margin: auto;
+ position: absolute;
+ z-index: 2;
+}
 
 
 /*Contact*/  
