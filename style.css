@@ -47,6 +47,7 @@ header {
 
 
 
+
 .logo{
 
   float: left;
@@ -61,6 +62,10 @@ ul{
   align-content: space-around;
   flex-wrap: wrap;
 }
+
+
+
+
   
   /*
   width:366px;
@@ -87,6 +92,7 @@ ul li a{
   font-family:avenir_medium;
 }
 
+
 ul li a:hover{
   color:#d65050;
 
@@ -96,15 +102,15 @@ ul li a.active{
   color:#d65050;
 }
 
-@media (max-width: 47rem) {
+/*@media (max-width: 400px) {
   ul{
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    align-content: center;
-   width:47rem;
+   width:7rem;
   }
-}
+}*/
 
 
 /*homepage*/
@@ -117,10 +123,13 @@ ul li a.active{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100%; 
+  min-width: 400px;
   min-height: 100vh;
   text-align: center;
 }
+
+
 
 
 .slider {
@@ -202,6 +211,31 @@ h2{
   color:white;
 }
 
+@media (max-width: 400px) {
+  h1{
+    max-width: 300px;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  h4.description{
+    max-width: 200px;
+    min-width: 200px;
+    line-height:25px;
+  }
+}
+
+@media (max-width: 400px) {
+  p.explication{
+    max-width: 300px;
+    min-width: 300px;
+    line-height:25px;
+  }
+}
+
+
+
 
 
 .title-more{
@@ -223,24 +257,55 @@ p{
   width:61rem;
 }
 
-@media (max-width: 70rem) {
+@media (max-width: 840px) {
   p{
-    max-width: 50rem;
+    max-width: 620px;
+    line-height: 2em;
   }
 }
 
-@media (max-width: 47rem) {
+@media (max-width: 768px) {
   p{
-    max-width: 26rem;
+    max-width: 548px;
+    line-height: 2em;
   }
 }
 
-@media (max-width: 25rem) {
+@media (max-width: 675px) {
   p{
-    max-width: 18rem;
+    max-width: 525px;
+    line-height: 1.75em;
   }
 }
 
+@media (max-width: 600px) {
+  p{
+    max-width: 365px;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  p{
+    max-width: 300px;
+    min-width: 300px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  p.desc-more{
+    max-width: 365px;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  p.desc-more{
+    max-width: 200px;
+    min-width: 200px;
+  }
+}
 
 
 /*More*/
@@ -331,6 +396,30 @@ padding-top: 80px;
   width:74.5rem;
 }
 
+@media (max-width: 1300px) {
+  .projects {
+    align-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+}
+
+@media (max-width: 1140px) {
+  .projects {
+    flex-direction: row;
+    height: auto;
+  }
+}
+
+@media (max-width: 675px) {
+  .projects {
+    flex-direction: row;
+    height: auto;
+  }
+}
+
+
+
 .project-image{
   position: relative;
   padding-top: 90px;
@@ -338,6 +427,29 @@ padding-top: 80px;
     -webkit-transition: all 500ms; 
   
 }
+
+@media (max-width: 1300px) {
+  .project-image {
+    align-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+}
+
+@media (max-width: 1140px) {
+  .project-image {
+    flex-direction: row;
+    height: auto;
+  }
+}
+
+@media (max-width: 675px) {
+  .project-image {
+    flex-direction: row;
+    height: auto;
+  }
+}
+
 
 .helwa{
  
@@ -347,6 +459,16 @@ padding-top: 80px;
   z-index: -1;
   display:none;
 }
+
+@media (max-width: 400px) {
+  .helwa {
+    display: block;
+    max-width: 300px;
+    
+  }
+}
+
+
 
 .project-image:hover.helwa{
    background-image: url(image/projects-name/helwayabaladi.png);
@@ -509,10 +631,12 @@ a.helwa:hover{
 }
 
 .main-oakley{
-margin: auto;
+ margin: auto;
  position: absolute;
  z-index: 2;
 }
+
+
 
 
 /*Contact*/  
