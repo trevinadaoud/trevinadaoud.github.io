@@ -725,11 +725,19 @@ a.helwa:hover{
   
    font-size:30px;
    line-height:2px;
-    color:black;
- 
-    
+    color:black; 
   }
 }
+
+@media (max-width: 200px) {
+  .hope {
+  
+   font-size:30px;
+   line-height:32px;
+    color:black; 
+  }
+}
+
 
 
 .hope.soon{
@@ -763,6 +771,15 @@ a.helwa:hover{
 }
 
 
+@media (max-width: 200px) {
+  .big {
+  
+  margin-top: 90px;
+    
+  }
+}
+
+
 
 .vertical-line{
   -webkit-transform: rotate(90deg);
@@ -791,14 +808,22 @@ a.helwa:hover{
   }
 }
 
+@media (max-width: 200px) {
+  
+  .vertical-line {
+   position: absolute;
+    margin-top:450px;
+  }
+}
+
+
+
 .contact-info{
   font-family: avenir_next_demi;
   color:#d65050;
   font-size:27px;
   line-height:7px;
- 
-
-  
+   
 }
 
 .contact{
@@ -824,6 +849,16 @@ a.helwa:hover{
   position: absolute;
   padding-top:300px;
    
+    
+  }
+}
+
+@media (max-width: 200px) {
+  .contact{
+  
+  position: absolute;
+  padding-top:550px;
+  
     
   }
 }
