@@ -64,6 +64,30 @@ ul{
 }
 
 
+@media (max-width: 400px) {
+  ul{
+    
+   padding-right:1rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   width:15rem;
+  }
+ }
+
+
+@media (max-width: 600px) {
+  ul{
+  
+   
+  padding-left: rem;
+  text-align: right;
+   display: block;
+   width:25rem;
+  }
+ }
+
 
 
   
@@ -102,26 +126,7 @@ ul li a.active{
   color:#d65050;
 }
 
-@media (max-width: 400px) {
-  ul{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-content: center;
-   width:15rem;
-  }
- }
 
-
-@media (max-width: 600px) {
-  ul{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content:flex-end;
-   align-content:space-around;
-   width:25rem;
-  }
- }
 
 
 /*homepage*/
@@ -703,6 +708,30 @@ a.helwa:hover{
 }
 
 
+@media (max-width: 675px) {
+  .hope {
+  
+   font-size:35px;
+   line-height:10px;
+    color:black;
+ 
+    
+  }
+}
+
+
+@media (max-width: 400px) {
+  .hope {
+  
+   font-size:30px;
+   line-height:2px;
+    color:black;
+ 
+    
+  }
+}
+
+
 .hope.soon{
  color:#d65050;
   text-shadow: 0px 0px 0px black ;
@@ -713,6 +742,28 @@ a.helwa:hover{
   position: absolute;
 }
 
+
+
+
+@media (max-width: 675px) {
+  .big {
+  
+  margin-top: 55px;
+    
+  }
+}
+
+
+@media (max-width: 400px) {
+  .big {
+  
+  margin-top: 15px;
+    
+  }
+}
+
+
+
 .vertical-line{
   -webkit-transform: rotate(90deg);
   width:95px; 
@@ -721,15 +772,58 @@ a.helwa:hover{
   margin-top:200px;
 }
 
+
+@media (max-width: 675px) {
+  
+  .vertical-line {
+   position: absolute;
+    margin-top:275px;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  
+  .vertical-line {
+   position: absolute;
+    margin-top:200px;
+  }
+}
+
 .contact-info{
   font-family: avenir_next_demi;
   color:#d65050;
   font-size:27px;
   line-height:7px;
+ 
 
   
 }
 
-.contact-info.gmail{
-  margin-top:130px;
+.contact{
+  position: absolute;
+  padding-top:100px;
+}
+
+
+
+@media (max-width: 675px) {
+  .contact{
+  
+  position: absolute;
+  padding-top:400px;
+   
+    
+  }
+}
+
+@media (max-width: 400px) {
+  .contact{
+  
+  position: absolute;
+  padding-top:300px;
+   
+    
+  }
 }
