@@ -337,6 +337,15 @@ p{
   transition: 500ms  ease-in-out;
 }
 
+
+@media (max-width: 400px) {
+  #more{
+    max-width: 200px;
+    min-width: 200px;
+  }
+}
+
+
 .group{
   padding-left: 9.5rem;
   padding-top: 30px;
@@ -357,6 +366,9 @@ p{
   margin-top:-15px;
   color:#d65050;
 }
+
+
+
 
 /*About*/  
 
